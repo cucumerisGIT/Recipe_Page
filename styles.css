@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Young Serif";
+    src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Outfit";
+    src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format('truetype');
+    font-weight: 400 700;
+}
+
+:root {
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: var(--stone-100);
+    color: var(--stone-600);
+    font-family: "Outfit", sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+ol, ul {
+    margin: 0 0 1rem -20px;
+}
+
+li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+li {
+    padding-left: 20px;
+    margin-bottom: 1rem;
+}
+
+li strong {
+    color: var(--brown-800);
+}
+
+h1 {
+    margin-bottom: 0;
+    font-family: "Young Serif", sans-serif;
+    font-size: 1.6rem;
+    color: var(--stone-900);
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1rem;
+}
+
+caption {
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+#omelette-img {
+    display: block;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+}
+
+#preparation-container {
+    margin: 2rem 0 2rem 0;
+    padding: .75rem 2rem .75rem 2rem;
+    background-color: var(--rose-50);
+}
+
+#preparation-container h3 {
+    color: var(--rose-800);
+} 
+
+.content {
+    align-self: self-start;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--stone-150);
+}
+
+.content:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.section-title {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    font-family: "Young Serif", sans-serif;
+    font-size: 1.2rem;
+    color: var(--brown-800);
+}
+
+.table-key {
+    padding-left: 20px;
+}
+
+.table-value {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
